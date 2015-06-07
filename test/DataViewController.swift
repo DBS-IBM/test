@@ -23,6 +23,10 @@ class DataViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func sayHello(name: String) -> String {
+        return "welcome," + name
+    }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -31,6 +35,8 @@ class DataViewController: UIViewController {
         } else {
             self.dataLabel!.text = ""
         }
+        
+        
     }
 
 
